@@ -29,6 +29,7 @@ public class Assignment1 {
 4. Write a program to find the sum of natural numbers from 1 to 20 using while and for loops.
 
 
+email: nagarjun.sdet@gmail.com
 
 
 
