@@ -4,7 +4,7 @@ public class MethodsDemo {
 	int age=30;//instance variable
 	
 	//instance method
-	void instanceMethod(){
+	public void instanceMethod(){
 		//instance area
 		System.out.println("Instance method...");	
 	}
