@@ -58,10 +58,41 @@ We can retrieve the data from LinkedList by using cursors: Enumeration, Iterator
 
 
 
+					Set(i)
+					
+HashSet(c)						SortedSet(i)
+
+LinkedHashSet(c)				NavigableSet(i)
+
+								TreeSet(c)
 
 
+HashSet(c):
+------------
+Heterogeneous objects are allowed.
+Duplicate objects are NOT allowed.
+NULL insertion is possible. (we can insert only one NULL object because duplicate objects are not allowed)
+Data structure us HashTable
+Insertion order is not preserved.
+It supports only Iterator cursor to retrieve the data.
 
+LinkedHashSet(c):
+LinkedHashSet is child class of HashSet
+Heterogeneous objects are allowed.
+Duplicate objects are NOT allowed.
+NULL insertion is possible. (we can insert only one NULL object because duplicate objects are not allowed)
+Data structure is LinkedList and HashTable
+Insertion order is preserved.
+It supports only Iterator cursor to retrieve the data.
 
+TreeSet(c):
+------------
+Heterogeneous objects are NOT allowed.
+Duplicate objects are NOT allowed.
+Data structure is LinkedList  and HashTable
+NULL insertion is NOT possible.
+Insertion order is NOT preserved but it sorts the elements in ascending order.
+It supports only Iterator cursor to retrieve the data.
 
 
 
