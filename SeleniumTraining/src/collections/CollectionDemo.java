@@ -77,6 +77,7 @@ Insertion order is not preserved.
 It supports only Iterator cursor to retrieve the data.
 
 LinkedHashSet(c):
+------------------
 LinkedHashSet is child class of HashSet
 Heterogeneous objects are allowed.
 Duplicate objects are NOT allowed.
