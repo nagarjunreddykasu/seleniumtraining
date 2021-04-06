@@ -34,6 +34,42 @@ HashMap allows only one null key but allows multiple null values.
 Insertion order is not preserved.
 Data structure is Hashtable.
 
+LinkedHashMap(C):
+------------------
+HashMap contains values based on the key.
+HashMap does not allow duplicate keys but allows duplicate values.
+HashMap allows only one null key but allows multiple null values.
+Insertion order is preserved.
+Data structure is Hashtable and LinkedList.
+
+TreeMap(c):
+----------
+It is same as HashMap except below two points.
+Insertion is NOT preserved but it sorts the entries in ascending order based on key.
+null key is not allowed
+
+
+Hashtable(C):
+--------------
+It does not allow null key and null value
+It does not accept duplicate keys
+Data structure is Hashtable
+Insertion order is not preserved.
+
+Properties(c):
+--------------
+Properties class is child class of Hashtable
+Properties object contains key and value pair as String.
+
+
+
+
+
+
+
+
+
+
 
 
 
