@@ -2,8 +2,10 @@ package basics;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.opera.OperaDriver;
 
 public class OpenBrowser {
 	public static void main(String[] args) {
@@ -18,9 +20,16 @@ public class OpenBrowser {
 		WebDriver driver=new FirefoxDriver();*/
 		
 		//To Launch IE browser, we need to download IEDriver.exe
-		System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"//drivers//IEDriverServer.exe");
-		WebDriver driver=new InternetExplorerDriver();
+		/*System.setProperty("webdriver.ie.driver", System.getProperty("user.dir")+"//drivers//IEDriverServer.exe");
+		WebDriver driver=new InternetExplorerDriver();*/
 		
+		//To launch edge browser, we need to download edgedriver.exe
+		/*System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"//drivers//msedgedriver.exe");
+		WebDriver driver=new EdgeDriver();*/
+		
+		//To launch opera browser, we need to download operadriver.exe
+		System.setProperty("webdriver.opera.driver", System.getProperty("user.dir")+"//drivers//operadriver.exe");
+		WebDriver driver=new OperaDriver();
 		
 		//To open the application
 		driver.get("https://www.selenium.dev/");
