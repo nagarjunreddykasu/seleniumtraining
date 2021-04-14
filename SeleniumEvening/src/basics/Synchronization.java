@@ -21,15 +21,13 @@ public class Synchronization {
 		driver.findElement(By.partialLinkText("Example 1:")).click();
 		driver.findElement(By.xpath("//button[contains(text(),'Start')]")).click();
 		
-		WebDriverWait wait=new WebDriverWait(driver,30);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#finish h4")));
+		/*WebDriverWait wait=new WebDriverWait(driver,30);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#finish h4")));*/
 		
+		Reusable.wait(driver, By.cssSelector("#finish h4"));
 		String message=driver.findElement(By.cssSelector("#finish h4")).getText();
 		System.out.println(message);
-		
-		
-		
-		
+	
 	}
 
 }
