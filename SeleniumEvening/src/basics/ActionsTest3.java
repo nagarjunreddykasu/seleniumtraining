@@ -20,7 +20,7 @@ public class ActionsTest3 {
 		driver.findElement(By.id("TxtPassword")).sendKeys("xeno@1234");
 		driver.findElement(By.id("BtnLogin")).click();
 		
-		
+		//Mouse hover
 		WebElement billsMenu=driver.findElement(By.id("menu_aBills"));
 		Actions act=new Actions(driver);
 		act.moveToElement(billsMenu).perform();
@@ -28,22 +28,22 @@ public class ActionsTest3 {
 		Thread.sleep(2000);
 		driver.findElement(By.linkText("Add Bills")).click();
 		
-		
+		// tool tip
 		WebElement toolTipIcon=driver.findElement(By.xpath("//*[@id='cpBody_divXTBDE']/label[2]/a/img"));
 		new Actions(driver).moveToElement(toolTipIcon).perform();
-		
 		String tooltipMessage=toolTipIcon.getAttribute("title");
 		System.out.println("Tooltip Message: "+tooltipMessage);
+		
+		//page down and page up events
 		driver.findElement(By.id("cpBody_btnBeginDEWithoutImg")).click();
-		
 		new Actions(driver).sendKeys(Keys.PAGE_DOWN).perform();
-		
 		Thread.sleep(2000);
 		new Actions(driver).sendKeys(Keys.PAGE_UP).perform();
 		
-		
+		//Right click
 		//act.contextClick(driver.findElement(By.id("cpBody_btnBeginDEWithoutImg"))).perform();
 		
+		//Double click
 		//act.doubleClick(element).perform();  //To double click on any element
 		
 		
