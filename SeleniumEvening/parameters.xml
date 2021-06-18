@@ -5,7 +5,7 @@
    <parameter name="browser" value="chrome" />
   <test name="Test1">
     <classes>
-      <class name="testng.Automation4"/>
+      <class name="testng.StaticDataProvider2"/>
     </classes>
   </test>
   
