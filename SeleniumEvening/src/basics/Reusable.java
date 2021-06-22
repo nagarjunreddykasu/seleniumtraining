@@ -1,12 +1,17 @@
 package basics;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.function.Function;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -46,6 +51,14 @@ public class Reusable {
 
 	public static WebDriver getDriver(){
 		return driver;
+	}
+	public static String takeScreenshot() throws IOException{
+		TakesScreenshot ts=(TakesScreenshot)getDriver();
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		String dest=System.getProperty("user.dir")+"//screenshots//screenshot.png";
+		File destination=new File(dest);
+		FileUtils.copyFile(source,destination);
+		return dest;
 	}
 	
 	public static void selectDate(WebDriver driver, String month, String day) throws InterruptedException{
