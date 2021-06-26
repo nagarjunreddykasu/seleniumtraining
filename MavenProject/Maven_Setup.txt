@@ -1,0 +1,25 @@
+Install Maven plugin in Eclipse IDE:
+-----------------------------
+Steps to Install Maven in Eclipse IDE:
+1. Click on the Help from the top menu in Eclipse and select ‘Install New Software..‘
+2. Click on the Add button on the newly opened window.
+3. In the Name box, type ‘Maven‘ and in the Location box, type ‘http://download.eclipse.org/technology/m2e/releases‘
+4. A check-box will appear in the pop window, Check the check-box and click on Next button.
+5. Please wait for some time and let the window complete its processing. It will not take long but 2 or 3 minutes.
+6. Keep the default settings and click on Next button.
+7. Accept the ‘Terms and Conditions‘ and then Click on Finish button.
+8. Wait while it finishes the installation.
+9. Once the installation is finished, it will ask you to restart the Eclipse. Please click on Yes, so that changes can be reflected properly.
+
+Install Maven on Windows:
+Prerequisite:
+Install java and setup the environment variables.
+1. Download the Maven from the URL https://maven.apache.org/download.cgi
+2. Extract it to some location. You can choose your own location.
+3. Set up the Maven Environment Variable the same way we set up the Java Environment Variable.
+variable name: MAVEN_HOME
+Variable value: <path of maven>  ex: 'C:\apache-maven-3.2.3‘
+4. To run Maven from command prompt, this is necessary to update the Path Variable with Maven’s installation ‘bin’ directory.
+Edit the path variable and append maven bin folder path (ex: C:\apache-maven-3.2.3\bin) 
+5. Test the Maven Installation
+Type mvn -version in command prompt and then hit enter.
