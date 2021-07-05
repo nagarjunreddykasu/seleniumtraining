@@ -1,3 +1,4 @@
+@login @sanity
 Feature: Login
 In order to verify Login functionality
 As a user
