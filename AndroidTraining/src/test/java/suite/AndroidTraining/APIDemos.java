@@ -103,7 +103,8 @@ xpath
 AccessibilityId
 IOSUIAutomation
 
-
+Pending Topics:
+----------------
 AndroidUIAutomator
 Scrolling (Vertical and Horizontal)
 KeyEvents
@@ -113,6 +114,40 @@ TouchAction class (tap, longpress, swipe, drag and drop)
 Hybrid App (Native and Web view)
 
 Jenkins integration
+
+
+driver.findElement(MobileBy.AndroidUIAutomator("new UiSelector().text(\"App\")"))
+
+
+
+text()  -> pass text attribute value
+textStartsWith() -> pass some partial starting text attribute value
+textContains() -> pass some partial text attribute value
+textMatches()  -> pass regular exp with text attribute value (ex: .*MESSAGE)
+
+
+description()  -> pass content-desc attribute value
+descriptionStartsWith()
+descriptionContains()
+descriptionMatches()
+
+
+resourceId()
+resourceIdMatches()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
